@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Student informtion</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header text-center">Form Add</div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Add name">
+                        </div>
+                        <div class="form-group">
+                            <label>Profile Images</label>
+                            <input type="text" class="form-control" id="profile" placeholder="Add profile">
+                        </div>
+                        <div class="form-group">
+                            <label>Post Images</label>
+                            <input type="text" class="form-control" id="post" placeholder="Add post">
+                        </div>
+                        <button class="form-control btn btn-primary" type="button">Add new</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8" id="result">
+            </div>
+        </div>
+    </div>
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB1HHYe9u-Rij8v1loGVhE0YlKgi9FMM6Y",
+    authDomain: "student-12f10.firebaseapp.com",
+    databaseURL: "https://student-12f10.firebaseio.com",
+    projectId: "student-12f10",
+    storageBucket: "student-12f10.appspot.com",
+    messagingSenderId: "930449052870",
+    appId: "1:930449052870:web:14a4f63216d655a6e5f3c7",
+    measurementId: "G-NG4RW65R5D"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var database = firebase.firestore()
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>
